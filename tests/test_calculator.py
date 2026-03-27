@@ -24,3 +24,8 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(1, 0)
+
+
+def test_intentional_failure():
+    """This test should fail — spike S7."""
+    assert 1 == 2, "Intentional failure for spike S7"
